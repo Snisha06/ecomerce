@@ -18,22 +18,7 @@ class Map2 extends StatefulWidget {
 
 class _Map1State extends State<Map2> {
   late GoogleMapController mapController;
-  Map<String, Marker>_markers = {};void _showMarkerInfo(String markerId) {
-    showModalBottomSheet(
-      context: context,
-      builder: (BuildContext context) {
-        return Container(
-          // Customize the content of your bottom sheet here
-          child: Center(
-            child: Text(
-              'Info for Marker: $markerId',
-              style: TextStyle(fontSize: 20),
-            ),
-          ),
-        );
-      },
-    );
-  }
+  Map<String, Marker>_markers = {};
 
 
   @override
